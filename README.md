@@ -1,7 +1,7 @@
 # caelum_project-wd-43-
  apenas um projeto basico com uso de algumas tecnologias:Less,Bootstrap,Jquery.  
  
- reuisitos:
+ requisitos:
  
  1:tenha algum Web-server instalado;
  
