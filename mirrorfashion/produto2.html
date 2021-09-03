@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title> mirrorfashion | produto </title>
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="css/css-min/reset.min.css">
+		<link rel="stylesheet" href="css/css-min/estilos.min.css">
+		<link rel="stylesheet" href="css/css-min/produto.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel ="stylesheet">
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+		<![endif]-->
+	</head>
+	
+	<body>
+		<header class="container">
+			<h1 class="logotipo"><img src="img/logo.png" alt="Mirror Fashion"></h1>
+
+			<p class="sacola">
+				Nenhum item	na sacola de compras
+			</p>
+			
+			<nav class="menu-opcoes">
+				<ul>
+					<li><a href="#">Sua Conta</a></li>
+					<li><a href="#">Lista de Desejos</a></li>
+					<li><a href="#">Cartão Fidelidade</a></li>
+					<li><a href="sobre.html">Sobre</a></li>
+					<li><a href="#">Ajuda</a></li>
+				</ul>
+			</nav>
+		</header>
+		
+		<div class="produto-back">
+		
+			<div class="container">
+				<div class="produto">
+					<h1>Fuzzy Cardigan 2</h1>
+					<p>por apenas R$ 129,90</p>
+					
+					<form method="POST" action="checkout.html">
+						<fieldset class="cores">
+							<legend> Escolha a cor:</legend>
+						
+							<input type="radio" name="cor" id="verde">
+							<label for="verde">
+								<img src="./img/produtos/foto2-verde.png" alt="produto na cor verde">
+							</label>
+							
+							<input type="radio" name="cor" id="rosa">
+							<label for="rosa">
+								<img src="./img/produtos/foto2-rosa.png" alt="produto na cor rosa">
+							</label>
+						
+							<input type="radio" name="cor" id="azul">
+							<label for="azul">
+								<img src="./img/produtos/foto2-azul.png" alt="produto na cor azul">
+							</label>
+						
+						</fieldset>
+						
+						<fieldset class="tamanhos">
+							<legend>Escolha o tamanho:</legend>
+							
+							<input type="range" min="36" max="46" value="42" step="2" name="tamanho" id="tamanho">
+						    <output for="tamanho" name="valorTamanho">42</output>
+						</fieldset>
+			
+						<button class="comprar">comprar</button>
+					</form>
+				</div>
+				
+				<div class="detalhes">
+					<h2>detalhes dos produtos</h2>
+					
+					<p>Esse	é o	melhor casaco de Cardigã que você já viu. Excelente
+						material italiano com estampa desenhada	pelos artesãos	da
+						comunidade de Krotor nas ilhas gregas. Compre já e	receba	hoje
+						mesmo pela nossa entrega a jato.
+					</p>
+				
+					<table>
+						<thead>
+							<tr>
+								<th>Caracteristicas</th>
+								<th>Detalhe</th>
+							</tr>
+						</thead>
+						
+						<tbody>
+							<tr>
+								<td>Modelo</td>
+								<td>Cardigã 7845</td>
+							</tr>
+							
+							<tr>
+								<td>Material</td>
+								<td>Algodão e poliester</td>
+							</tr>
+							
+							<tr>
+								<td>Cores</td>
+								<td>Azul, Rosa e Verde</td>
+							</tr>
+							
+							<tr>
+								<td>Lavagem</td>
+								<td>Lavar a mão</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<footer>
+			<div class="container">
+				<img src="img/logo-rodape.png" alt="Logo da Mirror Fashion">
+				
+				<ul class="social">
+					<li><a href="https://facebook.com/mirrorfashion">facebook</a></li>
+					<li><a href="https://twitter.com/mirrorfashion">twitter</a></li>
+					<li><a href="https://plus.google.com/mirrorfashion">google+</a></li>
+				</ul>
+			</div>
+		</footer>
+		<script type="text/javascript" src="js/produto.js"></script>
+	</body>
+</html>
