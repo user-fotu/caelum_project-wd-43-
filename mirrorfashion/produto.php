@@ -20,18 +20,12 @@
 				<h1><?= $produto['nome']?></h1>
 				<p>por apenas<?= $produto['preco']?></p>
 				
-				<script>
-					(function(d, s,	id) {
-						var	js,	fjs	= d.getElementsByTagName(s)[0];
-						if (d.getElementById(id)) return;
-						js = d.createElement(s); js.id = id;
-						js.src = "http://connect.facebook.net/pt_BR/all.js#xfbml=1";
-						fjs.parentNode.insertBefore(js,	fjs);
-					}(document,	'script','facebook-jssdk'));
-				</script>
+				<div id="fb-root"></div>
 				<div class="fb-like" data-href="http://www.mirrorfashion.net"
 				data-send="false" data-layout="box_count"
 				data-width="58" data-show-faces="false"> </div>
+				
+				<a class="twitter-share-button" href="https://twitter.com/intent/tweet">Tweet</a>
 				
 				<form method="POST" action="checkout.php">
 					<input type="hidden" name="id" value="<?=$produto['id']?>">
@@ -108,5 +102,32 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="js/produto.js"></script>
+	
+	<script>
+		(function(d, s,	id) {
+			var	js,	fjs	= d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "http://connect.facebook.net/pt_BR/all.js#xfbml=1";
+			fjs.parentNode.insertBefore(js,	fjs);
+		}(document,	'script','facebook-jssdk'));
+	</script>
+	
+	<script>window.twttr = (function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0],
+		t = window.twttr || {};
+	  if (d.getElementById(id)) return t;
+	  js = d.createElement(s);
+	  js.id = id;
+	  js.src = "https://platform.twitter.com/widgets.js";
+	  fjs.parentNode.insertBefore(js, fjs);
+
+	  t._e = [];
+	  t.ready = function(f) {
+		t._e.push(f);
+	  };
+
+	  return t;
+	}(document, "script", "twitter-wjs"));</script>
 	
 	<?php include("rodape.php");?>
