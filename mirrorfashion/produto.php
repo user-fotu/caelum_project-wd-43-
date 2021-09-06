@@ -20,6 +20,19 @@
 				<h1><?= $produto['nome']?></h1>
 				<p>por apenas<?= $produto['preco']?></p>
 				
+				<script>
+					(function(d, s,	id) {
+						var	js,	fjs	= d.getElementsByTagName(s)[0];
+						if (d.getElementById(id)) return;
+						js = d.createElement(s); js.id = id;
+						js.src = "http://connect.facebook.net/pt_BR/all.js#xfbml=1";
+						fjs.parentNode.insertBefore(js,	fjs);
+					}(document,	'script','facebook-jssdk'));
+				</script>
+				<div class="fb-like" data-href="http://www.mirrorfashion.net"
+				data-send="false" data-layout="box_count"
+				data-width="58" data-show-faces="false"> </div>
+				
 				<form method="POST" action="checkout.php">
 					<input type="hidden" name="id" value="<?=$produto['id']?>">
 					<input type="hidden" name="nome" value="<?=$produto['nome']?>">
